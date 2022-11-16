@@ -1,4 +1,4 @@
-import { IsNotEmpty, MaxLength } from 'class-validator';
+import { IsNotEmpty, IsNumber, MaxLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateProductDto {
@@ -8,6 +8,7 @@ export class CreateProductDto {
   name: string;
 
   @IsNotEmpty()
+  @IsNumber()
   @ApiProperty()
   price: number;
 }

@@ -6,7 +6,7 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class ProductEntity {
+export class Product {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -18,9 +18,6 @@ export class ProductEntity {
   })
   price: number;
 
-  @UpdateDateColumn({
-    nullable: false,
-    default: () => 'CURRENT_TIMESTAMP',
-  })
+  @UpdateDateColumn()
   updatedAt: Date;
 }
