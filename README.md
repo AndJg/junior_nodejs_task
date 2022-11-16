@@ -7,15 +7,10 @@
 ```bash
 $ npm install
 ```
-## MySql config provided in file
+## MySql 
 
-  type: 'mysql',
-  host: 'localhost',
-  port: port,
-  username: 'junior_task',
-  password: 'test',
-  database: 'junior_task',
-
+Mysql confing is included in src/config/typeorm.config.ts
+change the data if needed.
 
 ## Running the app
 
